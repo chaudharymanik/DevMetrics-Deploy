@@ -1,15 +1,19 @@
 {
-  "name": "server",
+  "name": "devmetrics-server",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["devmetrics", "api", "analysis"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Backend API for DevMetrics project",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "axios": "^1.10.0",
